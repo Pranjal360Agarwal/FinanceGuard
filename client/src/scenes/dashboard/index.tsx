@@ -46,7 +46,9 @@ const gridTemplateSmallScreens = `
   "i"
   "j"
   "j"
-`;const Dashboard = () => {
+`;
+
+const Dashboard = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1200px)");
   return (
     <Box
@@ -74,3 +76,5 @@ const gridTemplateSmallScreens = `
     </Box>
   );
 };
+
+export default Dashboard;
