@@ -17,11 +17,6 @@ import {
   Area,
 } from "recharts";
 
-
-type Props = object;
-
-
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const Row1 = () => {
   const { palette } = useTheme();
   const { data } = useGetKpisQuery();
@@ -38,7 +33,33 @@ const Row1 = () => {
     );
   }, [data]);
 
-   return (
+  const revenueExpenses = useMemo(() => {
+    return (
+      data &&
+      data[0].monthlyData.map(({ month, revenue, expenses }) => {
+        return {
+          name: month.substring(0, 3),
+          revenue: revenue,
+          expenses: expenses,
+        };
+      })
+    );
+  }, [data]);
+
+  const revenueProfit = useMemo(() => {
+    return (
+      data &&
+      data[0].monthlyData.map(({ month, revenue, expenses }) => {
+        return {
+          name: month.substring(0, 3),
+          revenue: revenue,
+          profit: (revenue - expenses).toFixed(2),
+        };
+      })
+    );
+  }, [data]);
+
+  return (
     <>
       <DashboardBox gridArea="a">
         <BoxHeader
