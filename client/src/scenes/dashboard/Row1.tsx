@@ -2,12 +2,14 @@ import DashboardBox from "@/components/DashboardBox";
 import { useGetKpisQuery } from "@/state/api";
 
 
-type Props = {};
+type Props = object;
 
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const Row1 = (props: Props) => {
   
   const { data } = useGetKpisQuery();
+  console.log('data:', data);
 
   return (
       <>
