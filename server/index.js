@@ -26,7 +26,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
 
 
-console.log("hello");
+app.use("/kpi", kpiRoutes);
+app.use("/product", productRoutes);
+app.use("/transaction", transactionRoutes);
 
 /* MONGOOSE SETUP */
 const PORT = process.env.PORT || 9000;
@@ -42,6 +44,6 @@ mongoose
         //await mongoose.connection.db.dropDatabase();
         //KPI.insertMany(kpis);
         //Product.insertMany(products);
-        Transaction.insertMany(transactions);
+    // Transaction.insertMany(transactions);
     })
     .catch((error) => console.log(`${error} did not connect`));
