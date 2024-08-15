@@ -15,7 +15,7 @@ import { kpis, products, transactions } from "./data/data.js";
 
 app.use(
     cors({
-        origin: [""],
+        origin: ["https://finance-guard-pranjal.vercel.app/"],
         methods: ["POST", "GET", "DELETE"],
         credentials: true,
     })
