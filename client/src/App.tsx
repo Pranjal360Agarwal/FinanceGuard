@@ -10,6 +10,7 @@ import Predictions from "@/scenes/predictions";
 
 function App() {
   const theme = useMemo(() => createTheme(themeSettings), []);
+
   return (
     <div className="app">
       <BrowserRouter>
@@ -20,6 +21,19 @@ function App() {
             <Routes>
               <Route path="/" element={<Dashboard />} />
               <Route path="/predictions" element={<Predictions />} />
+              {/* Add a new route for the external link */}
+              <Route
+                path="/finance-guard"
+                element={
+                  <Box
+                    component="iframe"
+                    src="https://finance-guard-pranjal.vercel.app/"
+                    width="100%"
+                    height="100%"
+                    style={{ border: "none" }}
+                  />
+                }
+              />
             </Routes>
           </Box>
         </ThemeProvider>
