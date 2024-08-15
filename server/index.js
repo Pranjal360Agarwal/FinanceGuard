@@ -13,13 +13,13 @@ import Product from "./models/Product.js";
 import Transaction from "./models/Transaction.js";
 import { kpis, products, transactions } from "./data/data.js";
 
-app.use(
-    cors({
-        origin: [""],
-        methods: ["POST", "GET", "DELETE"],
-        credentials: true,
-    })
-);
+//app.use(
+//    cors({
+//        origin: [""],
+//        methods: ["POST", "GET", "DELETE"],
+//        credentials: true,
+//    })
+//);
 
 /* CONFIGURATIONS */
 dotenv.config();
