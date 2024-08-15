@@ -198,11 +198,13 @@ const Row3 = () => {
           ></Box>
         </Box>
         <Typography margin="0 1rem" variant="h6">
-          Orci aliquam enim vel diam. Venenatis euismod id donec mus lorem etiam
-          ullamcorper odio sed. Ipsum non sed gravida etiam urna egestas
-          molestie volutpat et. Malesuada quis pretium aliquet lacinia ornare
-          sed. In volutpat nullam at est id cum pulvinar nunc.
-        </Typography>
+  
+  A 15% increase in total revenue, driven primarily by a strong sales performance 
+  in our premium product line. Our expense management initiatives have led to a 4% reduction 
+  in costs across major categories, contributing to healthier profit margins. 
+   Focus will be on sustaining this momentum through strategic investments in marketing.
+</Typography>
+
       </DashboardBox>
     </>
   );
