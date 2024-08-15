@@ -13,6 +13,13 @@ import Product from "./models/Product.js";
 import Transaction from "./models/Transaction.js";
 import { kpis, products, transactions } from "./data/data.js";
 
+app.use(
+    cors({
+        origin: [""],
+        methods: ["POST", "GET", "DELETE"],
+        credentials: true,
+    })
+);
 
 /* CONFIGURATIONS */
 dotenv.config();
@@ -44,6 +51,6 @@ mongoose
         //await mongoose.connection.db.dropDatabase();
         //KPI.insertMany(kpis);
         //Product.insertMany(products);
-    // Transaction.insertMany(transactions);
+        // Transaction.insertMany(transactions);
     })
     .catch((error) => console.log(`${error} did not connect`));
