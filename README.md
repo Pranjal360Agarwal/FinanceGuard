@@ -11,7 +11,7 @@ This project is a full-stack finance dashboard application built with the MERN s
 - **Material UI:** A modern UI design using MUI components.
 - **RESTful API:** Backend APIs to handle products, transactions, and KPIs.
 - **MongoDB for Data Storage:** NoSQL database to store financial data and user information.
-- **Deployment:** Application deployed using Vercel, with backend on Fly.io and Docker for containerization.
+- **Deployment:** Application deployed using Render.
 
 ## Tech Stack
 
@@ -32,9 +32,7 @@ This project is a full-stack finance dashboard application built with the MERN s
 
 ### DevOps & Deployment
 
-- **Vercel:** For frontend deployment.
-- **Fly.io:** For backend deployment.
-- **Docker:** For containerization and consistent environment setup.
+- **Render:** For both frontend and backend deployment.
 
 ## Installation & Setup
 
@@ -43,7 +41,6 @@ This project is a full-stack finance dashboard application built with the MERN s
 - **Node.js:** [Download and Install Node.js](https://nodejs.org/en/download/)
 - **Vite:** [Getting Started with Vite](https://vitejs.dev/guide/)
 - **MongoDB:** Install and run MongoDB locally or use a cloud provider.
-- **Docker:** [Install Docker](https://www.docker.com/products/docker-desktop)
 - **VSCode:** [Download and Install Visual Studio Code](https://code.visualstudio.com/download)
 
 ### Frontend Installation
@@ -88,8 +85,7 @@ This project is a full-stack finance dashboard application built with the MERN s
 
 ### Deployment
 
-- Frontend: Deploy the app on [Vercel](https://vercel.com/).
-- Backend: Deploy the server using [Fly.io](https://fly.io/docs/languages-and-frameworks/node/).
+- **Frontend & Backend:** Deploy both on [Render](https://render.com/).
 
 ## Resources & References
 
@@ -99,14 +95,10 @@ This project is a full-stack finance dashboard application built with the MERN s
 - **Redux Toolkit:** [Redux Toolkit Documentation](https://redux-toolkit.js.org/introduction/getting-started)
 - **Material UI:** [MUI Getting Started](https://mui.com/material-ui/getting-started/installation/)
 - **Recharts:** [Recharts Documentation](https://recharts.org/en-US/)
-- **Fly.io:** [Fly.io Node.js Deployment](https://fly.io/docs/languages-and-frameworks/node/)
-- **Vercel:** [Vercel Deployment](https://vercel.com/)
-- **Docker:** [Docker Installation](https://www.docker.com/products/docker-desktop)
-
+- **Render:** [Render Deployment](https://render.com/)
 
 ## Contact
 
 If you have any questions or feedback, please feel free to contact me at [pranjal360agarwal@gmail.com](mailto:pranjal360agarwal@gmail.com). You can also connect with me on [LinkedIn](https://www.linkedin.com/in/pranjalagarwal99/) or [Twitter](https://twitter.com/Pranjal12393385). Thank you for visiting my portfolio website!
 
 # Made with ❤ by [Pranjal Agarwal](https://github.com/Pranjal360Agarwal).
-
