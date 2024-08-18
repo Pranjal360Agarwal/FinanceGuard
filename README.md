@@ -1,4 +1,13 @@
-# FinanceGuard
+<h1 align="center">FinanceGuard ⚡</h1>
+
+<p align="center">
+  <img src="/client/public/screenshot1.jpg" alt="Demo App" width="700"/>
+</p>
+
+<p align="center">
+  <img src="/client/public/screenshot2.jpg" alt="Demo App" width="700"/>
+</p>
+
 
 This project is a full-stack finance dashboard application built with the MERN stack (MongoDB, Express, React, Node.js) that includes Machine Learning (ML) predictions. The frontend is developed using Vite, React, Redux Toolkit, Material UI (MUI), and Recharts. The backend is powered by Node.js, Express.js, and MongoDB.
 
