@@ -1,7 +1,9 @@
+import { useState, useEffect } from "react";
 import { Box, useMediaQuery } from "@mui/material";
 import Row1 from "./Row1";
 import Row2 from "./Row2";
 import Row3 from "./Row3";
+import LoadingPopup from "./LoadingPopup";
 
 const gridTemplateLargeScreens = `
   "a b c"
@@ -50,6 +52,28 @@ const gridTemplateSmallScreens = `
 
 const Dashboard = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1200px)");
+  const [loading, setLoading] = useState(true);
+  const [popupOpen, setPopupOpen] = useState(true); // Initially open the popup
+
+  useEffect(() => {
+    // Simulate data fetching
+    const fetchData = async () => {
+      setLoading(true);
+      setPopupOpen(true); // Show popup while loading
+      try {
+        // Replace with your data fetching logic
+        await new Promise((resolve) => setTimeout(resolve, 15000)); // Simulate a 15s delay
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      } finally {
+        setLoading(false);
+        setPopupOpen(false); // Hide popup when data is loaded
+      }
+    };
+
+    fetchData();
+  }, []);
+
   return (
     <Box
       width="100%"
@@ -70,9 +94,20 @@ const Dashboard = () => {
             }
       }
     >
-      <Row1 />
-      <Row2 />
-      <Row3 />
+      {loading ? (
+        <>
+          <Row1 />
+          <Row2 />
+          <Row3 />
+        </>
+      ) : (
+        <>
+          <Row1 />
+          <Row2 />
+          <Row3 />
+        </>
+      )}
+      <LoadingPopup open={popupOpen} onClose={() => setPopupOpen(false)} />
     </Box>
   );
 };
